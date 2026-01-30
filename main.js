@@ -30,3 +30,8 @@ document.getElementById("expenseForm").addEventListener("submit", () => {
 darkToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js");
+    });
+}
