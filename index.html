@@ -15,13 +15,15 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<div id="updateBanner" class="update-banner hidden">
+    <span>🚀 New update available</span>
+    <button id="applyUpdate">Update</button>
+</div>
 
 <body>
 
     <div class="wrapper">
         <div class="card">
-
-            <button id="darkToggle" class="dark-toggle">🌙</button>
             <header class="header">
                 <h1>💸 Expenses</h1>
                 <button id="darkToggle" class="dark-toggle">🌙</button>
@@ -61,6 +63,7 @@
             <ul id="list" class="expense-list"></ul>
 
             <button class="secondary-btn" onclick="exportCSV()">📤 Export to CSV</button>
+            <button class="danger-btn" id="clearBtn">🧹 Clear All Data</button>
         </div>
     </div>
 
